@@ -1,0 +1,38 @@
+/*----------------------------------
+Global Stlyes
+------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* border box fix */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nerko One', cursive;
+	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
+	font-size: 62.5%;
+	letter-spacing: 1.5px;
+	margin: 0;
+}
+
+#quote-box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #aaa;
+}
