@@ -1,6 +1,6 @@
 // Quotes stored as JSON Data
 const quoteData = "assets/data.json";
-let suffledQuotes = [];
+let shuffledQuotes = [];
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
