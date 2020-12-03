@@ -24,6 +24,10 @@ $ (document).ready(function() {
       // invoke shuffle function and store in variable shuffledData
       shuffledQuotes = shuffle(result);
       console.log(shuffledQuotes);
+      // iterate over shuffledData array to update quote
+      $.each(shuffledQuotes, function(i, item) {
+        $('#text').html(item.quote);
+      }); //for each end
     }); //get JSON end
   }); //on click end
 }); //end document ready
