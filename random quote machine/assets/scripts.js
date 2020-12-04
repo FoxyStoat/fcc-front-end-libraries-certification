@@ -16,18 +16,29 @@ function shuffle(array) {
   return array;
 }
 
-$ (document).ready(function() {
+function shuffleArray() {
+  // fetch quote data
+  $.getJSON(quoteData, function(result) {
+    // invoke shuffle function and store in variable shuffledData
+    shuffledQuotes = shuffle(result);
+    // call randomQuote function
+    randomQuote();
+  }); //get JSON end
+} //function end
+
+function randomQuote() {
+  // iterate over shuffledQuotes array to update quote
+  $.each(shuffledQuotes, function(i, item) {
+    $('#text').html(item.quote);
+    $('#author').html(item.author);
+  }); //for each end
+} //function end
+
   // Event listener for on click new quote button
   $('#new-quote').click(function() {
-    // fetch quote data
-    $.getJSON(quoteData, function(result) {
-      // invoke shuffle function and store in variable shuffledData
-      shuffledQuotes = shuffle(result);
-      console.log(shuffledQuotes);
-      // iterate over shuffledData array to update quote
-      $.each(shuffledQuotes, function(i, item) {
-        $('#text').html(item.quote);
-      }); //for each end
-    }); //get JSON end
+    shuffleArray();
   }); //on click end
+
+$ (document).ready(function() {
+  shuffleArray();
 }); //end document ready
