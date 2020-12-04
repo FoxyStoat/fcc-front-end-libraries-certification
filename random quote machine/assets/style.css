@@ -27,12 +27,28 @@ body {
 	margin: 0;
 }
 
-#quote-box {
-  height: 100vh;
-  display: flex;
+.wrapper {
+	height: 100vh;
+	background-color: #000;
+	display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
 
-  background: #aaa;
+#quote-box {
+	width: 40%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 2em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
