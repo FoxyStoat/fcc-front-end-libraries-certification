@@ -52,3 +52,7 @@ body {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 }
+
+#author {
+	font-style: italic;
+}
