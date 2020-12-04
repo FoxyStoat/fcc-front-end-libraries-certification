@@ -30,7 +30,8 @@ function randomQuote() {
   // iterate over shuffledQuotes array to update quote
   $.each(shuffledQuotes, function(i, item) {
     $('#text').html(item.quote);
-    $('#author').html(item.author);
+    $('#author').html("-" + " " + item.author);
+    $('#cite').html(item.cite);
   }); //for each end
 } //function end
 
