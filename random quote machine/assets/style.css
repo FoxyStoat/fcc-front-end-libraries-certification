@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	font-family: 'Nerko One', cursive;
+	font-family: 'EB Garamond', serif;
 	/*one Em roughly ten pixels (16 x 62.5% = 10)*/
 	font-size: 62.5%;
 	letter-spacing: 1.5px;
@@ -28,8 +28,8 @@ body {
 }
 
 .wrapper {
-	height: 100vh;
 	background-color: #000;
+	height: 100vh;
 	display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +50,7 @@ body {
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	/* font-weight: bold; */
 }
 
 #text {
@@ -76,7 +77,6 @@ body {
   border-radius: 4px;
   text-decoration: none;
   font-size: 1.6em;
-  font-weight: 700;
   padding: 1em;
 	border: none;
 	border: 1px solid #fff;
