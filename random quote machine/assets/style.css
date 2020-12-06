@@ -1,7 +1,6 @@
-/*----------------------------------
+/*-------------------------------------------------------------------------------
 Global Stlyes
-------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+---------------------------------------------------------------------------------*/
 
 * {
 	margin: 0;
@@ -25,14 +24,67 @@ body {
 	font-size: 62.5%;
 	letter-spacing: 1.5px;
 	margin: 0;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
+/*-------------------------------------------------------------------------------
+Headings
+---------------------------------------------------------------------------------*/
+
+.h1-wrapper {
+	background: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 23px;
+	display: inline-flex;
+	filter: brightness(200%);
+	-webkit-filter: brightness(200%);
+	/* overflow: hidden; */
+	text-align: center;
+}
+
+.txt-glow {
+	font-size: 3em;
+	background: #000;
+	color: #fff;
+	/* overflow: hidden; */
+}
+
+.txt-glow::before {
+	content: 'Dark souls';
+	position: absolute;
+	mix-blend-mode: luminosity;
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	top: 0;
+	left:0;
+	/* overflow: hidden; */
+}
+
+.gradient{
+	background: linear-gradient(114.5793141156962deg,rgba(211, 84, 0, 0.6) 4.927083333333334%,rgba(211, 84, 0, 0.6) 97.84374999999999%);
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height:100%;
+	mix-blend-mode: color-burn;
+	/* overflow: hidden; */
+}
+
+/*-------------------------------------------------------------------------------
+quote box
+---------------------------------------------------------------------------------*/
+
 .wrapper {
-	background-color: #000;
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
   flex-direction: column;
-  justify-content: center;
+	justify-content: center;
+	align-items: center;
 }
 
 #quote-box {
@@ -50,7 +102,6 @@ body {
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	/* font-weight: bold; */
 }
 
 #text {
@@ -63,6 +114,10 @@ body {
 	font-style: italic;
 	font-size: 1.7em;
 }
+
+/*-------------------------------------------------------------------------------
+buttons
+---------------------------------------------------------------------------------*/
 
 .button-container {
 	display: flex;
@@ -103,3 +158,7 @@ body {
 	color: #000;
 	border: 1px solid #000;
 }
+
+/*-------------------------------------------------------------------------------
+Media Queries
+---------------------------------------------------------------------------------*/
