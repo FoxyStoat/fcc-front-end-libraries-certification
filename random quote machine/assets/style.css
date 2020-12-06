@@ -75,12 +75,25 @@ Headings
 	/* overflow: hidden; */
 }
 
+.txt-glow::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -5%;
+	mix-blend-mode: luminosity;
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	width: 110%;
+	height: 1px;
+	background: rgba(255,255,255, 0.5);
+}
+
 /******************** sub heading ********************/
 .heading-sub {
   font-size: 2rem;
   letter-spacing: 4px;
   font-weight: 400;
-  color: #fff;
+	color: #fff;
 }
 
 /*-------------------------------------------------------------------------------
