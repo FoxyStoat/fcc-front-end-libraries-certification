@@ -37,7 +37,7 @@ Headings
 .h1-wrapper {
 	background: #000;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
 	letter-spacing: 23px;
 	display: inline-flex;
 	filter: brightness(200%);
@@ -73,6 +73,14 @@ Headings
 	height:100%;
 	mix-blend-mode: color-burn;
 	/* overflow: hidden; */
+}
+
+/******************** sub heading ********************/
+.heading-sub {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #fff;
 }
 
 /*-------------------------------------------------------------------------------
