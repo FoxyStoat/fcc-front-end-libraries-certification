@@ -27,6 +27,7 @@ body {
 	background-color: #000;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -42,15 +43,16 @@ Headings
 	display: inline-flex;
 	filter: brightness(200%);
 	-webkit-filter: brightness(200%);
-	/* overflow: hidden; */
+	overflow: hidden;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .txt-glow {
-	font-size: 3em;
+	font-size: 4em;
 	background: #000;
 	color: #fff;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .txt-glow::before {
@@ -94,6 +96,7 @@ Headings
   letter-spacing: 4px;
   font-weight: 400;
 	color: #fff;
+	text-align: center;
 }
 
 /*-------------------------------------------------------------------------------
@@ -101,7 +104,7 @@ quote box
 ---------------------------------------------------------------------------------*/
 
 .wrapper {
-	/* height: 100vh; */
+	height: 60vh;
 	display: flex;
   flex-direction: column;
 	justify-content: center;
@@ -109,7 +112,7 @@ quote box
 }
 
 #quote-box {
-	width: 40%;
+	width: 50%;
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
@@ -126,7 +129,11 @@ quote box
 }
 
 #text {
-	font-size: 2em;
+	font-size: 2.5em;
+}
+
+#author {
+	margin-top: 1em;
 }
 
 #author,
@@ -183,3 +190,26 @@ buttons
 /*-------------------------------------------------------------------------------
 Media Queries
 ---------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .txt-glow {
+		font-size: 2em;
+	}
+
+	.heading-sub {
+		font-size: 1.8rem;
+	}
+
+	#quote-box {
+		width: 80%;
+	}
+
+	#text {
+		font-size: 1.8em;
+	}
+
+	#author,
+	#cite {
+		font-size: 1.6em;
+	}
+}
