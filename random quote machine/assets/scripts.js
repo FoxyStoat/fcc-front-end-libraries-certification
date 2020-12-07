@@ -2,6 +2,7 @@ $ (document).ready(function() {
   // Quotes stored as JSON Data
   const quoteData = "assets/data.json";
   let shuffledQuotes = [];
+  // let tweetUrl= "https://twitter.com/intent/tweet?text=";
 
   // Shuffle function from http://stackoverflow.com/a/2450976
   function shuffle(array) {
@@ -30,7 +31,7 @@ $ (document).ready(function() {
   function randomQuote() {
     // iterate over shuffledQuotes array to update quote
     $.each(shuffledQuotes, function(i, item) {
-      $('#text').html(item.quote);
+      $('#text').html("<i class=\"fa fa-quote-left left-quote\" aria-hidden=\"true\"></i>" + " " + item.quote);
       $('#author').html("-" + " " + item.author);
       $('#cite').html(item.cite);
     }); //for each end
