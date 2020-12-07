@@ -34,50 +34,24 @@ body {
 /*-------------------------------------------------------------------------------
 Headings
 ---------------------------------------------------------------------------------*/
+h1,
+h2 {
+	text-align: center;
+	color: #fff;
+}
 
-.h1-wrapper {
+h1 {
 	background: #000;
+	font-size: 6em;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 7px;
-	display: inline-flex;
 	filter: brightness(200%);
-	-webkit-filter: brightness(200%);
-	overflow: hidden;
-	text-align: center;
 	white-space: nowrap;
+	text-shadow: 1px 1px 4px rgba(211, 84, 0, 0.8);
 }
 
-.txt-glow {
-	font-size: 4em;
-	background: #000;
-	color: #fff;
-	overflow: hidden;
-}
-
-.txt-glow::before {
-	content: 'Dark souls';
-	position: absolute;
-	mix-blend-mode: luminosity;
-	filter: blur(3px);
-	-webkit-filter: blur(3px);
-	top: 0;
-	left:0;
-	/* overflow: hidden; */
-}
-
-.gradient{
-	background: linear-gradient(114.5793141156962deg,rgba(211, 84, 0, 0.6) 4.927083333333334%,rgba(211, 84, 0, 0.6) 97.84374999999999%);
-	position: absolute;
-	top: 0;
-	left:0;
-	width: 100%;
-	height:100%;
-	mix-blend-mode: color-burn;
-	/* overflow: hidden; */
-}
-
-.txt-glow::after {
+h1::before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -87,16 +61,32 @@ Headings
 	-webkit-filter: blur(1px);
 	width: 110%;
 	height: 1px;
-	background: rgba(255,255,255, 0.5);
+	background: rgba(211, 84, 0, 0.5);
+}
+
+h1::after {
+	content: '';
+	position: absolute;
+	top: 40%;
+	left: 44%;
+	width: 6%;
+	height: 35%;
+	border: 1px solid  rgba(211, 84, 0, 0.5);
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	mix-blend-mode: luminosity;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 
 /******************** sub heading ********************/
-.heading-sub {
+h2 {
   font-size: 2rem;
   letter-spacing: 4px;
   font-weight: 400;
-	color: #fff;
-	text-align: center;
 }
 
 /*-------------------------------------------------------------------------------
@@ -140,7 +130,7 @@ quote box
 #cite {
 	align-self: flex-end;
 	font-style: italic;
-	font-size: 1.7em;
+	font-size: 1.8em;
 }
 
 /*-------------------------------------------------------------------------------
@@ -149,8 +139,8 @@ buttons
 
 .button-container {
 	display: flex;
-	justify-content: flex-start;
-	margin-top: 1.5em;
+	justify-content: center;
+	margin-top: 2em;
 }
 
 #new-quote,
@@ -192,12 +182,12 @@ Media Queries
 ---------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 600px) {
-  .txt-glow {
-		font-size: 2em;
+  h1 {
+		font-size: 3.5em;
 	}
 
-	.heading-sub {
-		font-size: 1.8rem;
+	h2 {
+		font-size: 2em;
 	}
 
 	#quote-box {
@@ -205,7 +195,7 @@ Media Queries
 	}
 
 	#text {
-		font-size: 1.8em;
+		font-size: 2em;
 	}
 
 	#author,
