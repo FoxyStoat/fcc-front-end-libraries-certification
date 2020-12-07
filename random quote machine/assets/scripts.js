@@ -38,9 +38,9 @@ $ (document).ready(function() {
   } //function end
 
   // Event listener for on click new quote button
-  $('#new-quote').click(function() {
+  $('#new-quote').click(function(e) {
+    e.preventDefault();
     shuffleArray();
   }); //on click end
-
   shuffleArray();
 }); //end document ready
