@@ -1,8 +1,8 @@
 $ (document).ready(function() {
   // Quotes stored as JSON Data
   const quoteData = "assets/data.json";
+  const tweetUrl= "https://twitter.com/intent/tweet?text=";
   let shuffledQuotes = [];
-  // let tweetUrl= "https://twitter.com/intent/tweet?text=";
 
   // Shuffle function from http://stackoverflow.com/a/2450976
   function shuffle(array) {
@@ -42,5 +42,18 @@ $ (document).ready(function() {
     e.preventDefault();
     shuffleArray();
   }); //on click end
+
+  // Event listener Twitter share
+  $('#tweet-quote').click(function(e) {
+    e.preventDefault();
+    // grab current quote, author and cite
+    let quote = $('#text').text();
+    let author = $('#author').text();
+    let cite = $('#cite').text();
+    $('#tweet-quote').attr("href", tweetUrl);
+    // open new window and tweet quote
+    window.open(tweetUrl + encodeURIComponent('\"' + quote + '\"' + ' ' + author + ' ' + 'from' + ' ' + cite));
+  }); //on click twitter end
+
   shuffleArray();
 }); //end document ready
