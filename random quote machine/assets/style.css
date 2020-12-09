@@ -178,6 +178,49 @@ buttons
 }
 
 /*-------------------------------------------------------------------------------
+Footer
+---------------------------------------------------------------------------------*/
+
+.footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 1em;
+	margin-top: 20em;
+}
+
+.social-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social-container > a:link {
+	margin: 0.2em;
+	padding: 0.5em;
+}
+
+a:link {
+	color: rgba(211, 84, 0, 0.6);
+	font-size: 1.8em;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+	color: rgba(211, 84, 0, 1);
+	text-decoration: none;
+}
+
+.attribution {
+	font-size: 1.4em;
+}
+
+/*-------------------------------------------------------------------------------
 Media Queries
 ---------------------------------------------------------------------------------*/
 
