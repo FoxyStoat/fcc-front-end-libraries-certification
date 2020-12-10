@@ -15,8 +15,11 @@ Coded with:
 To submit a project to FreeCodeCamp it is required to use CodePen, this gave me a few CORS Origin issues when trying to get JSON data from GitHub.  After trying to work around this, it was easiest to make a gist which gave me no issues.  I have since managed to get the CORS Origin issue fixed.
 
 The Fisher–Yates shuffle algorithm was utilized for generating a random permutation of my quotes.
+
 Resources:
+
 [Fisher Yates Shuffle Algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
+
 [Stack overflow link](http://stackoverflow.com/a/2450976)
 
 
