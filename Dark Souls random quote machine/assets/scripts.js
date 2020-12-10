@@ -1,7 +1,7 @@
 $ (document).ready(function() {
   // Quotes stored as JSON Data
   const quoteData = "assets/data.json";
-  const tweetUrl= "https://twitter.com/intent/tweet?text=";
+  let tweetUrl = "https://twitter.com/intent/tweet?text=";
   let shuffledQuotes = [];
 
   // Shuffle function from http://stackoverflow.com/a/2450976
