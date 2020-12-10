@@ -12,7 +12,7 @@ Coded with:
 * CSS
 * jQuery
 
-To submit a project to FreeCodeCamp it is required to use CodePen, this gave me a few CORS Origin issues when trying to get JSON data from GitHub for some reason, but wasn't to much of a problem to sort out.  The Fisher–Yates shuffle algorithm was utilized for generating a random permutation of my quotes.
+To submit a project to FreeCodeCamp it is required to use CodePen, this gave me a few CORS Origin issues when trying to get JSON data from GitHub.  After trying to work around this, it was easiest to make a gist which gave me no issues.  The Fisher–Yates shuffle algorithm was utilized for generating a random permutation of my quotes.
 
 Resources:
 
@@ -27,5 +27,5 @@ Resources:
 
 I'm still adding more quotes to the JSON data and images, although images are not required to pass the FreeCodeCamp tests.
 
-If your a Dark Souls fan and wish to use the quotes then please feel free to use my [JSON data](https://raw.githubusercontent.com/FoxyStoat/fcc-front-end-libraries-certification/main/random%20quote%20machine/assets/data.json) for your own project.
+If your a Dark Souls fan and wish to use the quotes then please feel free to use my [JSON data](https://raw.githubusercontent.com/FoxyStoat/fcc-front-end-libraries-certification/main/random%20quote%20machine/assets/data.json) or [gist] for your own project.
 
