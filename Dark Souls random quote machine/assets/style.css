@@ -190,7 +190,8 @@ Footer
 	background: #000;
 	color: #fff;
 	padding: 1em;
-	margin-top: 20em;
+	position: absolute;
+	bottom: 0;
 }
 
 .social-container {
