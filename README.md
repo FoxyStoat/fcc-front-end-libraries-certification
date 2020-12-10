@@ -23,7 +23,7 @@ Resources:
 
 ### Screenshot:
 
-![Screenshot of Dark Souls Random Quote Machine](dark-souls-random-quote-machine-fcc.png "Screenshot Dark Souls Random Quote Machine")
+![Screenshot of Dark Souls Random Quote Machine](DarkSoulsrandomquotemachine/dark-souls-random-quote-machine-fcc.png "Screenshot Dark Souls Random Quote Machine")
 
 I'm still adding more quotes to the JSON data and images, although images are not required to pass the FreeCodeCamp tests.
 
