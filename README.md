@@ -27,5 +27,5 @@ Resources:
 
 I'm still adding more quotes to the JSON data and images, although images are not required to pass the FreeCodeCamp tests.
 
-If your a Dark Souls fan and wish to use the quotes then please feel free to use my [JSON data](https://raw.githubusercontent.com/FoxyStoat/fcc-front-end-libraries-certification/main/random%20quote%20machine/assets/data.json) or [gist] for your own project.
+If your a Dark Souls fan and wish to use the quotes then please feel free to use my [JSON data](https://raw.githubusercontent.com/FoxyStoat/fcc-front-end-libraries-certification/main/random%20quote%20machine/assets/data.json) or [gist](https://gist.githubusercontent.com/FoxyStoat/4cb3bb827521c1a8640392db67612f3e/raw/673d8097d95f2470ad428cc7971fae178af51cc0/darksouls-quotes.json) for your own project.
 
