@@ -29,9 +29,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	background: linear-gradient(rgba(0, 0, 0, 0.8),
-	rgba(0, 0, 0, 0.8)),
+	background: linear-gradient(rgba(0, 0, 0, 0.9),
+	rgba(0, 0, 0, 0.9)),
 	url('https://cdn3.dualshockers.com/wp-content/uploads/2018/04/dark-souls-remastered-1.jpg');
 	background-size: cover;
 	background-position: top center;
@@ -99,15 +98,15 @@ h2 {
 quote box
 ---------------------------------------------------------------------------------*/
 
-.wrapper {
+#qoute-box {
 	display: flex;
   flex-direction: column;
 	align-items: center;
 	height: 100vh;
 }
 
-#quote-box {
-	width: 60%;
+#quote-text {
+	width: 50%;
 	margin-top: 6em;
 	margin-right: auto;
 	margin-left: auto;
@@ -123,6 +122,10 @@ quote box
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 }
+/*
+#quote {
+
+} */
 
 #text {
 	font-size: 2.5em;
@@ -143,14 +146,23 @@ quote box
 	text-shadow: 1px 1px 1px rgba(211, 84, 0, 1);
 }
 
+#img-container {
+	align-self: center;
+	margin: 2em;
+}
+
+#img {
+	width: 100%;
+}
+
 /*-------------------------------------------------------------------------------
 buttons
 ---------------------------------------------------------------------------------*/
 
-.button-container {
+#button-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 2em;
+	margin-top: 5em;
 }
 
 #new-quote,
