@@ -31,7 +31,7 @@ $ (document).ready(function() {
   function randomQuote() {
     // iterate over shuffledQuotes array to update quote
     $.each(shuffledQuotes, function(i, item) {
-      $('#text').html("<i class=\"fa fa-quote-left left-quote\" aria-hidden=\"true\"></i>" + " " + item.quote);
+      $('#text').html(`<i class="fa fa-quote-left left-quote" aria-hidden="true"></i> ${item.quote}`);
       $('#author').html(`- ${item.author}`);
       $('#img-container').html(`<img src="${item.img}" id="img" alt="image of ${item.author}"/>`);
       $('#cite').html(`${item.cite}`);
