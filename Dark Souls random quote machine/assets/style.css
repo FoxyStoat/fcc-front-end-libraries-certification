@@ -29,6 +29,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.8),
+	rgba(0, 0, 0, 0.8)),
+	url('https://cdn3.dualshockers.com/wp-content/uploads/2018/04/dark-souls-remastered-1.jpg');
+	background-size: cover;
+	background-position: top center;
 }
 
 /*-------------------------------------------------------------------------------
@@ -41,7 +47,7 @@ h2 {
 }
 
 h1 {
-	background: #000;
+	background: rgba(0, 0, 0, 0.5);
 	font-size: 6em;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -61,7 +67,7 @@ h1::before {
 	-webkit-filter: blur(1px);
 	width: 110%;
 	height: 1px;
-	background: rgba(211, 84, 0, 0.5);
+	background: rgba(211, 84, 0, 0.3);
 }
 
 h1::after {
