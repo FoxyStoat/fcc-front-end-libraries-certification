@@ -32,7 +32,7 @@ $ (document).ready(function() {
     // iterate over shuffledQuotes array to update quote
     $.each(shuffledQuotes, function(i, item) {
       $('#quote-text').html(
-        `<div id="img-container"><img src="${item.img}" id="img" width="250" alt="image of ${item.author}"/></div>` +
+        `<div id="img-container"><img src="${item.img}" id="img" alt="image of ${item.author}"/></div>` +
         `<p id="text"><i class="fa fa-quote-left left-quote" aria-hidden="true"></i> ${item.quote}</p>` +
         `<p id="author">- ${item.author}</p>` +
         `<p id="cite">${item.cite}</p>`);
