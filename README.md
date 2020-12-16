@@ -20,9 +20,7 @@ Resources:
 
 [Stack overflow link](http://stackoverflow.com/a/2450976)
 
-[For Images and Quotes](https://darksouls.wiki.fextralife.com)
-
-[For Images and Quotes](https://darksouls.fandom.com/wiki)
+[For Images and Quotes darksouls fandom wiki was used](https://darksouls.fandom.com/wiki/Category:Dark_Souls:_Characters)
 
 
 ### Screenshot:
