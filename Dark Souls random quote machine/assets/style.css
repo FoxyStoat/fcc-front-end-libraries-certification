@@ -31,7 +31,7 @@ body {
 	align-items: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.9),
 	rgba(0, 0, 0, 0.9)),
-	url('https://cdn3.dualshockers.com/wp-content/uploads/2018/04/dark-souls-remastered-1.jpg') no-repeat;
+	url('images/dark-souls-remastered-1.jpg') no-repeat;
 	background-size: cover;
 	background-position: top center;
 }
